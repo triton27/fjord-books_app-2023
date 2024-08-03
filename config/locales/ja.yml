@@ -213,9 +213,11 @@ ja:
       sign_in_as: "%{user} としてログイン中"
   shared:
     comments:
-      create: コメントする
       delete: 削除
+    comment_contents:
       no_comments: コメントはまだありません
+    comment_form:
+      create: コメントする
   reports:
     mentions:
       title: この日報に言及している日報

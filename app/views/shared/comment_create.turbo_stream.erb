@@ -1,0 +1,2 @@
+<%= turbo_stream.update "comments", partial: 'shared/comment_contents', locals: { commentable: @commentable } %>
+<%= turbo_stream.update "comment_form", partial: 'shared/comment_form', locals: { commentable: @commentable } %>

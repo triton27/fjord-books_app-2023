@@ -7,7 +7,8 @@ class Books::CommentsController < ApplicationController
     comment.user = current_user
     # NOTE: 実装を複雑にしないよう、あえて保存失敗時の処理を考慮しないことにした（失敗時はシステムエラーとする）
     comment.save!
-    redirect_to book, notice: t('controllers.common.notice_create', name: Comment.model_name.human)
+    @commentable = book
+    render 'shared/comment_create'
   end
 
   private
