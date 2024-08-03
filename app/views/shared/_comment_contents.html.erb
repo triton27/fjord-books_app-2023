@@ -1,7 +1,7 @@
 <% if (comments = commentable.comments.order(:id).includes(:user).presence) %>
   <ul>
     <% comments.each do |comment| %>
-      <li>
+      <li id="<%= dom_id(comment) %>">
         <%= comment.content %>
         <small>
           (<%= link_to comment.user.name_or_email, comment.user %> - <%= l comment.created_at, format: :short %>)

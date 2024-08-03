@@ -1,0 +1,5 @@
+<% if @commentable.comments.exists? %>
+  <%= turbo_stream.remove @comment %>
+<% else %>
+  <%= turbo_stream.update "comments", partial: 'shared/comment_contents', locals: { commentable: @commentable } %>
+<% end %>
