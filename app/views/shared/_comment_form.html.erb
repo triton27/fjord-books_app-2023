@@ -1,5 +1,12 @@
-<%= form_with model: [commentable, commentable.comments.new], local: true do |f| %>
+<% comment ||= commentable.comments.new %>
+<% model = comment.new_record? ? [commentable, comment] : comment %>
+<% form_class = comment.new_record? ? 'comment-create-form' : 'comment-update-form' %>
+<%= form_with model: model, class: form_class do |f| %>
   <%# NOTE: ブラウザ側で必須チェックを行い、サーバーサイドの検証エラーを起きにくくする %>
   <%= f.text_field :content, required: true %>
-  <%= f.submit t('.create') %>
+  <% if comment.new_record? %>
+    <%= f.submit t('.create') %>
+  <% else %>
+    <%= f.submit t('.update'), class: 'comment-update' %>
+  <% end %>
 <% end %>

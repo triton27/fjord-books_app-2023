@@ -212,11 +212,13 @@ ja:
       menu: メニュー
       sign_in_as: "%{user} としてログイン中"
   shared:
-    comments:
+    comment_content:
+      edit: 編集
       delete: 削除
     comment_contents:
       no_comments: コメントはまだありません
     comment_form:
+      update: 更新する
       create: コメントする
   reports:
     mentions:
