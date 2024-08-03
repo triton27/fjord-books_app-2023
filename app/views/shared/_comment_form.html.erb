@@ -7,6 +7,9 @@
   <% if comment.new_record? %>
     <%= f.submit t('.create') %>
   <% else %>
-    <%= f.submit t('.update'), class: 'comment-update' %>
+    <small>
+      <%= f.submit t('.update'), class: 'comment-update' %>
+      <%= link_to t('.cancel'), comment %>
+    </small>
   <% end %>
 <% end %>

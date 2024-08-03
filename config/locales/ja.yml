@@ -218,8 +218,9 @@ ja:
     comment_contents:
       no_comments: コメントはまだありません
     comment_form:
-      update: 更新する
       create: コメントする
+      update: 更新する
+      cancel: キャンセル
   reports:
     mentions:
       title: この日報に言及している日報
