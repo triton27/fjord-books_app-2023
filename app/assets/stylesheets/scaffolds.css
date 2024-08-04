@@ -169,10 +169,39 @@ page-nav
   --nav-mt: 24px;
   font-size: var(--nav-fz);
   margin-top: var(--nav-mt);
+  margin-bottom: var(--nav-mt);
 }
 
 .page-nav .button_to {
   margin-top: var(--nav-mt);
+}
+
+.pager-container {
+  width: 100%;
+  text-align: center;
+  margin-top: 24px;
+}
+
+.pager {
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  flex-shrink: 0;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.8;
+  margin-bottom: 0px;
+  min-height: 34px;
+  min-width: 64px;
+  text-align: center;
+  user-select: none;
+  vertical-align: middle;
+  width: 250px;
+  border-radius: 8px;
+  white-space: nowrap;
+  transition: background-color 0.1s ease-out, border-color;
+  border: 1px solid var(--global-c);
+  padding: 8px 16px;
 }
 
 /****************

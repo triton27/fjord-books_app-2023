@@ -1,0 +1,4 @@
+<%= turbo_stream.append "reports" do %>
+  <%= render partial: 'report_item', collection: @reports, as: :report %>
+<% end %>
+<%= turbo_stream.replace "pager", partial: 'shared/pager', locals: { records: @reports } %>
