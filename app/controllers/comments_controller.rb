@@ -3,11 +3,9 @@
 class CommentsController < ApplicationController
   before_action :set_comment
 
-  def show
-  end
+  def show; end
 
-  def edit
-  end
+  def edit; end
 
   def update
     # NOTE: 実装を複雑にしないよう、あえて保存失敗時の処理を考慮しないことにした（失敗時はシステムエラーとする）
