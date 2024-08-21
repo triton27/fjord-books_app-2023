@@ -1,9 +1,0 @@
-<% if (comments = commentable.comments.order(:id).includes(:user).presence) %>
-  <ul>
-    <% comments.each do |comment| %>
-      <%= render 'shared/comment_content', comment: comment %>
-    <% end %>
-  </ul>
-<% else %>
-  (<%= t('.no_comments') %>)
-<% end %>

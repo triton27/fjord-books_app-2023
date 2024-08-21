@@ -1,5 +1,4 @@
-<% if @commentable.comments.exists? %>
-  <%= turbo_stream.remove @comment %>
-<% else %>
-  <%= turbo_stream.update "comments", partial: 'shared/comment_contents', locals: { commentable: @commentable } %>
+<%= turbo_stream.remove @comment %>
+<% unless @commentable.comments.exists? %>
+  <%= turbo_stream.update 'no-comments', partial: 'shared/no_comments', locals: { show: true } %>
 <% end %>

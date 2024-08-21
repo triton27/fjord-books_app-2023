@@ -1,8 +1,18 @@
 <div class="comments-container">
   <strong><%= Comment.model_name.human %>:</strong>
-  <div id="comments">
-    <%= render 'shared/comment_contents', commentable: commentable %>
+  <% comments = commentable.comments.order(:id).includes(:user).presence %>
+  <div id="no-comments">
+    <% unless comments %>
+      <%= render 'shared/no_comments', show: true %>
+    <% end %>
   </div>
+  <ul id="comments">
+    <% if comments %>
+      <% comments.each do |comment| %>
+        <%= render 'shared/comment_content', comment: comment %>
+      <% end %>
+    <% end %>
+  </ul>
   <div id="comment_form">
     <%= render 'shared/comment_form', commentable: commentable %>
   </div>
