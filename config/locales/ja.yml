@@ -215,8 +215,8 @@ ja:
     comment_content:
       edit: 編集
       delete: 削除
-    no_comments:
-      no_comments: コメントはまだありません
+    comments:
+      no_comments: (コメントはまだありません)
     comment_form:
       create: コメントする
       update: 更新する

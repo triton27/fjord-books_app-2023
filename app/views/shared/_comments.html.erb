@@ -2,15 +2,11 @@
   <strong><%= Comment.model_name.human %>:</strong>
   <% comments = commentable.comments.order(:id).includes(:user).presence %>
   <div id="no-comments">
-    <% unless comments %>
-      <%= render 'shared/no_comments', show: true %>
-    <% end %>
+    <%= t('.no_comments') unless comments %>
   </div>
   <ul id="comments">
-    <% if comments %>
-      <% comments.each do |comment| %>
-        <%= render 'shared/comment_content', comment: comment %>
-      <% end %>
+    <% Array(comments).each do |comment| %>
+      <%= render 'shared/comment_content', comment: comment %>
     <% end %>
   </ul>
   <div id="comment_form">
