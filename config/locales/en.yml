@@ -249,8 +249,14 @@ en:
     books: Books
     editing_book: Editing book
     new_book: New book
-  show_this_book: Show this book
-  new_book: New book
-  destroy_this_book: Destroy this book
-  edit_this_book: Edit this book
-  back_to_books: Back to books
+  actions:
+    show_this_book: Show this book
+    new_book: New book
+    destroy_this_book: Destroy this book
+    edit_this_book: Edit this book
+    back_to_books: Back to books
+  notice:
+    success_created: Book was successfully created.
+    success_updated: Book was successfully updated.
+    success_destroyed: Book was successfully destroyed.
+

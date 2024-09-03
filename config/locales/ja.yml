@@ -185,8 +185,13 @@ ja:
     books: 書籍の一覧
     editing_book: 書籍の編集
     new_book: 書籍の追加
-  show_this_book: この書籍の詳細
-  new_book: 書籍を追加
-  destroy_this_book: 削除
-  edit_this_book: 編集
-  back_to_books: 一覧に戻る
+  actions:
+    show_this_book: この書籍の詳細
+    new_book: 書籍を追加
+    destroy_this_book: 削除
+    edit_this_book: 編集
+    back_to_books: 一覧に戻る
+  notice:
+    success_created: 書籍を追加しました。
+    success_updated: 書籍を更新しました。
+    success_destroyed: 書籍を削除しました。
