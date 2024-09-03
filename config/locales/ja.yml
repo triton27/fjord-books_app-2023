@@ -181,7 +181,10 @@ ja:
       long: "%Y/%m/%d %H:%M"
       short: "%m/%d %H:%M"
     pm: 午後
-  Books: 書籍
+  title:
+    books: 書籍の一覧
+    editing_book: 書籍の編集
+    new_book: 書籍の追加
   show_this_book: この書籍の詳細
   new_book: 書籍を追加
   destroy_this_book: 削除

@@ -215,7 +215,10 @@ en:
       long: "%B %d, %Y %H:%M"
       short: "%d %b %H:%M"
     pm: pm
-  Books: Books
+  title:
+    books: Books
+    editing_book: Editing book
+    new_book: New book
   show_this_book: Show this book
   new_book: New book
   destroy_this_book: Destroy this book
